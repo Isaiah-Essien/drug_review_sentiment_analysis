@@ -1,5 +1,5 @@
 # Sentiment Analysis of Drug Reviews
-
+![Predictions on LSTM](src\image.png)
 ## Overview
 
 This project performs **sentiment analysis** on a dataset of drug reviews. The dataset is sourced from [Kaggle](https://www.kaggle.com/datasets/mohamedabdelwahabali/drugreview) and contains reviews of different drugs, along with user ratings and sentiments.
@@ -81,6 +81,7 @@ Three different models are used to classify sentiment:
 - Tokenize review text using **Transformers tokenizer**.
 
 ### Training & Evaluation
+![Test performace of LSTM](src\test_per_lstm.png)
 - Train models on the **preprocessed dataset**.
 - Evaluate performance using **accuracy, precision, recall, and F1-score**.
 
