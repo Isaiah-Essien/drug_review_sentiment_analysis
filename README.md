@@ -57,10 +57,12 @@ EDA includes **statistical and visual analysis** of the dataset:
 
 Three different models are used to classify sentiment:
 
-#### 1️⃣ **Support Vector Machine (SVM)**
-- Traditional machine learning approach.
-- Requires text vectorization (TF-IDF or Word Embeddings).
-- Trained using Scikit-learn.
+#### 1️⃣ **Multinomial Naïve Bayes (MNB)**  
+- **Probabilistic model** based on Bayes' Theorem.  
+- Assumes **features (words) are conditionally independent** given the class.  
+- Works best with **word frequency-based features** (e.g., Bag of Words, TF-IDF).  
+- **Fast and efficient** for text classification tasks.  
+- Implemented using **Scikit-learn** (`MultinomialNB`).
 
 #### 2️⃣ **Long Short-Term Memory (LSTM)**
 - A type of recurrent neural network (RNN).
@@ -91,13 +93,13 @@ Three different models are used to classify sentiment:
 
 - The **Transformer-based model** (e.g., BERT) performs **best** with the highest accuracy.
 - LSTM performs **moderately well** but requires more computational power.
-- SVM, while effective, struggles with **complex linguistic patterns**.
+- **Multinomial Naïve Bayes (MNB), while fast and efficient, struggles with **highly correlated features** and **longer dependencies** in text.**
 
 ### Performance Metrics:
 
 | Model | Accuracy | Precision | Recall | F1-Score |
 |--------|----------|----------|--------|----------|
-| SVM | ~78% | Moderate | Moderate | Moderate |
+| MNB | ~68% | Moderate | Moderate | Moderate |
 | LSTM | ~84% | High | High | High |
 | Transformer | ~90%+ | Very High | Very High | Very High |
 
