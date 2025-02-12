@@ -9,7 +9,7 @@ The notebook follows a structured pipeline, including:
 - **Exploratory Data Analysis (EDA)**
 - **Feature Engineering**
 - **Model Training** using:
-  - Support Vector Machine (SVM)
+  - Multinomial Naïve Bayes (MultinomialNB)
   - Long Short-Term Memory (LSTM)
   - Transformer-based models (e.g., BERT)
 
